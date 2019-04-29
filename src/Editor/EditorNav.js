@@ -1,12 +1,15 @@
 import React from 'react';
+import Logo from './Logo';
+import MainNav from './MainNav';
+import SearchForm from './SearchForm';
 
 const EditorNav = props => {
   return (
-    <ul>
-      <li>
-        <button onClick={props.onClick}>Something</button>
-      </li>
-    </ul>
+    <div>
+      <Logo />
+      <MainNav />
+      <SearchForm />
+    </div>
   );
 };
 export default EditorNav;
