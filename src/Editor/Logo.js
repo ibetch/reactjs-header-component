@@ -10,13 +10,10 @@ const Logo = () => {
     <React.Fragment>
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={''}>Expansion Panel 1</Typography>
+          <Typography className={''}>Logo</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Typography>Lipsum</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </React.Fragment>
