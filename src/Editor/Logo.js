@@ -1,22 +1,25 @@
 import React from 'react';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const Logo = () => {
+const styles = theme => ({
+  root: {
+    width: '100%'
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular
+  }
+});
+const Logo = props => {
+  const { classes } = props;
   return (
     <React.Fragment>
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={''}>Logo</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>Lipsum</Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+      <Typography>
+        <p>form elements of configurations</p>
+        <div className={classes.heading}>Mobile</div>
+      </Typography>
     </React.Fragment>
   );
 };
-export default Logo;
+export default withStyles(styles)(Logo);

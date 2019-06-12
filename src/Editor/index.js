@@ -1,15 +1,16 @@
 import React from 'react';
 import Logo from './Logo';
-import MainNav from './MainNav';
-import SearchForm from './SearchForm';
+import ConfigPanel from './ConfigPanel';
+import ConfigPanelSection from './ConfigPanelSection';
 
 const Editor = props => {
   return (
-    <div>
-      <Logo />
-      <MainNav />
-      <SearchForm />
-    </div>
+    <ConfigPanel>
+      <ConfigPanelSection configPanelTitle="Logo">
+        <Logo />
+      </ConfigPanelSection>
+      <ConfigPanelSection configPanelTitle="Mobiles">Mobile</ConfigPanelSection>
+    </ConfigPanel>
   );
 };
 export default Editor;

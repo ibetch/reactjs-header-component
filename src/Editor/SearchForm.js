@@ -10,13 +10,10 @@ const SearchForm = () => {
     <React.Fragment>
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={''}>Expansion Panel 1</Typography>
+          <Typography className={''}>Site Search</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Typography>form elements of configurations</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </React.Fragment>
